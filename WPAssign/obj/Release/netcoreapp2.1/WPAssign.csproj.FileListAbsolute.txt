@@ -1,0 +1,14 @@
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\bin\Release\netcoreapp2.1\WPAssign.deps.json
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\bin\Release\netcoreapp2.1\WPAssign.runtimeconfig.json
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\bin\Release\netcoreapp2.1\WPAssign.runtimeconfig.dev.json
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\bin\Release\netcoreapp2.1\WPAssign.dll
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\bin\Release\netcoreapp2.1\WPAssign.pdb
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.csprojAssemblyReference.cache
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.csproj.CoreCompileInputs.cache
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.RazorAssemblyInfo.cache
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.RazorAssemblyInfo.cs
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.AssemblyInfoInputs.cache
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.AssemblyInfo.cs
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.RazorTargetAssemblyInfo.cache
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.dll
+C:\Users\Adarsh\source\repos\WPAssign\WPAssign\obj\Release\netcoreapp2.1\WPAssign.pdb

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rapid Train ticketing service</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        </head>
+    <body>
+        <div class="w3-bar">
+            <h1>Rapid Train ticketing service</h1>
+            </div> 
+                        <center>
+                            <div id="login" >
+                            <form  action="booking.htm" autocomplete="on"> 
+                                <h1>Book trip</h1> 
+                                
+                                <table>
+                                    <tr>
+                                        <td>Origin city</td>
+                                        <td><select>
+                                            <option>Select a city</option>
+                                            <option>New Delhi</option>
+                                            <option>Mumbai</option>
+                                            <option>Chennai</option>
+                                            <option>Bengaluru</option>
+                                            <option>Hyderabad</option>
+                                            <option>Srinagar</option>
+                                            <option>Kolkata</option>
+                                        </select></td>
+                                    </tr>
+                                        <td>Destination city</td>
+                                        <td><select>                   <option>Select a city</option>               
+                                            <option>New Delhi</option>
+                                            <option>Mumbai</option>
+                                            <option>Chennai</option>
+                                            <option>Bengaluru</option>
+                                            <option>Hyderabad</option>
+                                            <option>Srinagar</option>
+                                            <option>Kolkata</option>
+                                        </select></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div id="fare"><p>Your ticket fare is:</p></div>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button"  class="button" onClick="showElements()" value="Book trip">
+                                        </td>
+                                    </tr>
+
+                                    <table class="table">
+                                        
+                                    </table>
+                                </table>
+                            </form>
+                        </div>
+                    </center>
+                    </div>
+
+    <script>
+        function showElements() {
+            var data;
+            $.ajax({
+                    type: 'GET',
+                    url:'http://localhost:63369/api/Tickets',
+                    contentType: "application/json; charset=utf-8",
+                    success: function (r) {
+                        data = r;
+                    },
+                    failure: function (r) {
+                        console.log(r.d);
+                    },
+                    error: function (r) {
+                        console.log(r.d);
+                    }
+                });
+}
+    </script>
+    </body>
+
+</html>

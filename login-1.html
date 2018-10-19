@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome to ABC website</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function Login()
+            {
+                var global Token = "";
+                debugger;
+                var user = {Username : document.getElementById("username").value, Password : document.getElementById("password").value} ;
+                $.ajax({
+                    type: 'POST',
+                    url:'http://localhost:63369/api/Users/Login/',
+                    contentType: "application/json; charset=utf-8",
+                    success: function (r) {
+                        Token = r;
+                    },
+                    failure: function (r) {
+                        console.log(r.d);
+                    },
+                    error: function (r) {
+                        console.log(r.d);
+                    }
+                });
+                debugger;
+            }
+        </script>
+        </head>
+    <body>
+        <div class="w3-bar">
+            <h1>Rapid Train ticketing service</h1>
+            </div> 
+                     <center>
+                        <div id="booking" >
+                            <form method="post" action="" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" > Username </label>
+                                    <input id="username" name="Username" required="required" type="text" placeholder="Enter username here"/>
+                                </p>
+                                <p> 
+                                    <label for="password" > Password </label>
+                                    <input id="password" name="Password" required="required" type="password" placeholder="Enter password here" /> 
+                                </p>
+                               
+                                    <button class="submit button" onclick="Login();">Login</button>
+
+                                <p>  
+                                    New member ?
+                                    <a href="registration-1.html"> Register </a>
+                                </p>
+
+                            </form>
+                        </div>
+                    </center>                    
+
+    </body>
+</html>

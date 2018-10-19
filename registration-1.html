@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+    <html >
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rapid Train ticketing service</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        function Login()
+            {
+                var user = 
+                {
+                    Username : document.getElementById("username").value, 
+                    Password : document.getElementById("password").value,
+                    Name: document.getElementById("name").value,
+                    EmailId: document.getElementById("emailid").value,
+                    PhoneNumber: document.getElementById("PhoneNumber").value
+                } ;
+                $.ajax({
+                    type: 'POST',
+                    url:'http://localhost:63369/api/Users/Login/',
+                    contentType: "application/json; charset=utf-8",
+                    success: function (r) {
+                    },
+                    failure: function (r) {
+                        console.log(r.d);
+                    },
+                    error: function (r) {
+                        console.log(r.d);
+                    }
+                });
+                debugger;
+            }
+        </script>
+		 </head>
+    <body >
+ <div class="w3-bar">
+            <h1>Rapid Train ticketing service</h1>
+            </div> 
+                    <center>
+                        <div id="register" 
+>
+                            <form  action="login.htm" autocomplete="on"> 
+                                <h1 > Sign up </h1> 
+                                <p> 
+                                    <label for="firstname" >First name</label>
+                                    <input id="firstname" name="firstname" required="required" type="text" />
+                                </p>
+                                <p> 
+                                    <label for="lastname" >Last name</label>
+                                    <input id="lastname" name="lastname" required="required" type="text" />
+                                </p>
+                                
+
+                                <p> 
+                                    <label for="usernamesignup" >Username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" > Email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" /> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" >Your Password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" />
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" >Confirm  password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" />
+                                </p>
+
+                                <p> 
+                                    <label for="contactno" >Contact number</label>
+                                    <input id="contactno" name="contactno" required="required" type="text" />
+                                </p>
+                                
+
+                                    <button  class="button" > Register </button>
+
+                                <p class="redirect">  
+									Already a member ?
+									<button  class="button" onclick="location.href='login.htm '"> Log in </button>
+								</p>
+                            </form>
+                    </center>
+                        </div>
+						
+                   
+                
+    </body>
+</html>
